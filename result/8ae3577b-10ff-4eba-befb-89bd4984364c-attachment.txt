@@ -1,0 +1,12 @@
+[32mINFO    [0m root:test_selenium.py:11 设置浏览器驱动，窗口最大化，隐形等待设置为5s
+[32mINFO    [0m root:test_selenium.py:42 打开扫码登录页面
+[32mINFO    [0m root:test_selenium.py:45 调用复用的cookies
+[32mINFO    [0m root:test_selenium.py:50 调用cookies成功
+[32mINFO    [0m root:test_selenium.py:53 进入企业微信主页成功
+[32mINFO    [0m root:test_selenium.py:57 进入通讯录页面成功
+[32mINFO    [0m root:test_selenium.py:61 成功进入添加成员页面
+[32mINFO    [0m root:test_selenium.py:65 成功填写姓名
+[32mINFO    [0m root:test_selenium.py:71 成功填写别名
+[32mINFO    [0m root:test_selenium.py:76 成功填写账号
+[32mINFO    [0m root:test_selenium.py:81 成功填写手机号
+[32mINFO    [0m root:test_selenium.py:84 完成新增

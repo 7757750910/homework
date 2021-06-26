@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_selenium.py:11 设置浏览器驱动，窗口最大化，隐形等待设置为5s
+[32mINFO    [0m root:test_selenium.py:24 设置复用
+[32mINFO    [0m root:test_selenium.py:28 复用设置成功
+[32mINFO    [0m root:test_selenium.py:30 将拿到的cookies并写入yaml文件 date.yaml中
+[32mINFO    [0m root:test_selenium.py:34 写入文件成功
