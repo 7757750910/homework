@@ -61,24 +61,35 @@ class TestSelenium:
         logging.info('成功进入添加成员页面')
         sleep(3)
         # 填写姓名
-        self.driver.find_element_by_xpath('//*[@id="username"]').send_keys('小韩3')
+        self.driver.find_element_by_xpath('//*[@id="username"]').send_keys('小韩1')
         logging.info('成功填写姓名')
         sleep(1)
         # 填写别名
         self.driver.find_element_by_xpath('//*[@id="memberAdd_english_name"]').click()
-        self.driver.find_element_by_xpath('//*[@id="memberAdd_english_name"]').send_keys('小小韩3')
+        self.driver.find_element_by_xpath('//*[@id="memberAdd_english_name"]').send_keys('小小韩1')
         sleep(1)
         logging.info('成功填写别名')
         # 填写账号
         self.driver.find_element_by_xpath('//*[@id="memberAdd_acctid"]').click()
-        self.driver.find_element_by_xpath('//*[@id="memberAdd_acctid"]').send_keys('775777')
+        self.driver.find_element_by_xpath('//*[@id="memberAdd_acctid"]').send_keys('775778')
         sleep(1)
         logging.info('成功填写账号')
         # 填写手机号
         self.driver.find_element_by_xpath('//*[@id="memberAdd_phone"]').click()
-        self.driver.find_element_by_xpath('//*[@id="memberAdd_phone"]').send_keys('18733506887')
+        self.driver.find_element_by_xpath('//*[@id="memberAdd_phone"]').send_keys('18733506888')
         sleep(1)
         logging.info('成功填写手机号')
         # 其余非必填项未填，点击保存按钮，完成新增
         self.driver.find_element_by_link_text('保存').click()
+        logging.info('成功保存')
+        sleep(5)
+        eles = self.driver.find_elements_by_css_selector(".member_colRight_memberTable_td:nth-child(2)")
+
+        for x in eles:
+            print(type(x.get_attribute("title")))
+            print(x.get_attribute("title"))
+            if "小韩" == x.get_attribute("title"):
+                print('完成新增')
+            else:
+                print('失败')
         logging.info('完成新增')
